@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testpro.css">
+    <style>
+        #su {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+            
+        }
+#su .signup {
+display: flex;
+
+
+}
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .passworddiv, .emaildiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 30px 30px 30px 30px;
+line-height: 40px;
+
+        }
+span {
+font-size: small;
+
+}
+.check {
+    text-align: left;
+
+}
+input {
+
+    border: none;
+    border-bottom: 1px solid;
+}
+input :active{
+
+border: none;
+border-bottom: 1px solid;
+}
+#subbutton , button{
+background-color: transparent;
+border: none;
+border-bottom: 3px solid;
+background-color: black;
+color: white;
+width: 70%;
+height: 3vh;
+cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+
+<section id="su">
+    <form action="login.php" method="post">
+        <div id="signup" class="signup" name="signup">
+            <div class="emaildiv">
+                <label for="email" id="emaillabel"> enter email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="passworddiv">
+                <label for="password" id="passlabel"  > enter password</label>
+                <input type="password" name="password" id="password" required >
+            </div>
+
+        </div>
+    
+        <input type="submit" value="login" id="subbutton" class="regbut">
+        
+        
+    </form>
+
+</section>
+
+
+
+</body>
+
+</html>
